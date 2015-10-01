@@ -7,8 +7,9 @@
 
 <p>
   <strong>Cost:</strong>
-  <%= @purchase.cost %>
+  $ <%= @purchase.cost.round(2) %>
 </p>
 
 <%= link_to 'Edit', edit_purchase_path(@purchase) %> |
 <%= link_to 'Back', purchases_path %>
+1
